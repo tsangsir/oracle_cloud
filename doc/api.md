@@ -125,7 +125,7 @@ $ pip install oci
 
 ```
 import oci
-config = oci.config.from_file()
+config = oci.config.from_file(profile_name='tsangsir')
 database_client = oci.database.DatabaseClient(config)
 
 identity_client = oci.identity.IdentityClient(config)
